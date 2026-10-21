@@ -1,0 +1,9 @@
+{% if settings.dgShowTags === true and tags and (pluginSettings.position === "bottom" or pluginSettings.position === "both") %}
+<div class="footer-tags">
+  {% for tag in tags %}
+    {% if tag != 'gardenEntry' and tag != 'note' %}
+      <a class="tag">#{{tag}}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}

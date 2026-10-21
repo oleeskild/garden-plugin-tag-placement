@@ -1,0 +1,15 @@
+{% if settings.dgShowTags === true and tags %}
+<style>
+  {% if pluginSettings.position === "bottom" %}
+  main.content > header .header-tags { display: none; }
+  {% endif %}
+  .footer-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid var(--background-modifier-border);
+  }
+</style>
+{% endif %}
