@@ -12,8 +12,9 @@ content, or in both places.
 | Setting | Default | Description |
 | --- | --- | --- |
 | Tag position | `bottom` | `bottom` moves tags below the note content; `top` keeps them in the header; `both` shows them in both places. |
+| Apply to home page | `true` | Also use the tag position on the home page. When off, the home page keeps its tags at the top. |
 
-Can also be set via `TAG_PLACEMENT_POSITION` in the garden's `.env`.
+Can also be set via `TAG_PLACEMENT_POSITION` and `TAG_PLACEMENT_APPLY_TO_HOME` in the garden's `.env`.
 
 Tags are only shown when the garden's **Show tags** setting
 (`dg-show-tags`) is enabled. Bottom tags are clickable with the search

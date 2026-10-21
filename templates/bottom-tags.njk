@@ -1,3 +1,4 @@
+{% if page.url != "/" or pluginSettings.applyToHome %}
 {% if settings.dgShowTags === true and tags and (pluginSettings.position === "bottom" or pluginSettings.position === "both") %}
 <div class="footer-tags">
   {% for tag in tags %}
@@ -6,4 +7,5 @@
     {% endif %}
   {% endfor %}
 </div>
+{% endif %}
 {% endif %}

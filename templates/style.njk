@@ -1,3 +1,4 @@
+{% if page.url != "/" or pluginSettings.applyToHome %}
 {% if settings.dgShowTags === true and tags %}
 <style>
   {% if pluginSettings.position === "bottom" %}
@@ -12,4 +13,5 @@
     border-top: 1px solid var(--background-modifier-border);
   }
 </style>
+{% endif %}
 {% endif %}
